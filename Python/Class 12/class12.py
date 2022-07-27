@@ -50,12 +50,14 @@ by default we get str value
 
 
 
+
 file_object = open("Test.txt","r")
 
-value = file_object.read()
+value = file_object.read(3)
 # parameter of of read represents number of bytes to be read like if it is 15 bytes it means
 # 15 Characters are to be read.
 print(value)
-print(file_object.read())
-
-
+value1=file_object.read(5)
+print(value1)
+value2=file_object.read(5)
+print(value2)

@@ -63,12 +63,21 @@ by default we get str value
 # print(value2)
 
 
-fobj = open("Test.txt","r")
+# fobj = open("Test.txt","r")
 
-print_value= fobj.readline(5)
+# print_value= fobj.readline()
 
-print(print_value)
+# print(print_value)
 
-print_value= fobj.readline(5)
+# print_value= fobj.readline()
 
-print(print_value)
+# print(print_value)
+
+# f = open("Test.txt","r")
+# value = f.readlines()
+# print(value)
+
+
+
+
+

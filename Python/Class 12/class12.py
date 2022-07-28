@@ -76,6 +76,46 @@ by default we get str value
 # f = open("Test.txt","r")
 # value = f.readlines()
 # print(value)
+# '''Read Line by line'''
+# f = open("Test.txt","r")
+
+# str = " "
+
+# while str:
+#     str = f.readline()
+#     print(str)
+# f.close
+
+# '''Displaying size of File with and without EOL'''
+
+
+# f = open('Test.txt','r')
+
+# size_EOL = 0
+# size_NoEOL = 0
+# str = ' '
+
+
+# while str:
+#     str = f.readline()
+#     size_EOL = size_EOL + len(str)
+#     size_NoEOL = size_NoEOL + len(str.strip())
+
+
+# print(size_EOL)
+# print(size_NoEOL)
+
+
+# '''Read Complete file in a list'''
+
+# f = open(r"Test.txt",'r')
+
+# complete_file_list = f.readlines() ## .readlines gives us whole thing in a list form along with \n
+
+# print(complete_file_list)
+
+
+
 
 
 

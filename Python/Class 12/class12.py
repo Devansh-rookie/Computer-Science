@@ -146,7 +146,7 @@ by default we get str value
 
 
 
-# f= open("student.txt",'w+')
+# f= open("student.txt",'a+')
 # list1 = []
 # number_students = int(input("Enter the number of students in class:-  "))
 
@@ -163,5 +163,53 @@ by default we get str value
 
 # f.writelines(list1)
 # f.close()
+
+
+
+
+# f= open("student.txt",'a+')
+# list1 = []
+# number_students = int(input("Enter the number of students to add:-  "))
+
+
+# for i in range(number_students):
+#     print("For student number", i+1)
+#     name = input("Enter the Name of student:- ")
+#     roll_number= input("Enter the Roll number of Student:- ")
+#     marks = input("Enter the number of Marks of the student:- ")
+#     list1.append("Student "+ str(i+1)+'\n')
+#     list1.append('Name : '+name + '\n')
+#     list1.append('Roll number : '+roll_number+'\n')
+#     list1.append('Marks : '+marks+'\n' + '\n')
+
+# f.writelines(list1)
+# f.close()
+
+
+# f = open("student.txt","r")
+# value = ' '
+# while value:
+#     value= f.readline()
+#     print(value)
+# f.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

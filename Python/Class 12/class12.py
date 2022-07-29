@@ -126,5 +126,42 @@ by default we get str value
 
 # f.close()
 
+# f = open("new_file.txt","a+")
+# list1 = []
+# n = int(input("How many names:-  "))
+
+
+# for i in range(n):
+#     anything = input("Enter Values:-  ")
+#     list1.append(anything+"\n")  ## Necessary for new line thing.
+# f.writelines(list1)
+# f.close()
+
+# obj = open("new_file.txt","r+")
+
+# value = obj.read()
+
+# print(value)
+
+
+
+
+# f= open("student.txt",'w+')
+# list1 = []
+# number_students = int(input("Enter the number of students in class:-  "))
+
+
+# for i in range(number_students):
+#     print("For student number", i+1)
+#     name = input("Enter the Name of student:- ")
+#     roll_number= input("Enter the Roll number of Student:- ")
+#     marks = input("Enter the number of Marks of the student:- ")
+#     list1.append("Student "+ str(i+1)+'\n')
+#     list1.append('Name : '+name + '\n')
+#     list1.append('Roll number : '+roll_number+'\n')
+#     list1.append('Marks : '+marks+'\n' + '\n')
+
+# f.writelines(list1)
+# f.close()
 
 

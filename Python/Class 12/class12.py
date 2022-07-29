@@ -117,7 +117,14 @@ by default we get str value
 
 
 
+# f = open('new_file.txt','a+')  ## here a+,a,w,w+ can be used but we have to be careful with w because it can erase everything too
 
+# for i in range(5):
+#     input1 = input("Enter the Value to be added:  ")
+#     f.write(input1)
+#     f.write("\n")  ## here \n is for next line because other wise all will stick to each other here space can also be used
+
+# f.close()
 
 
 

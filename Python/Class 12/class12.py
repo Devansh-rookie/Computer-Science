@@ -194,8 +194,27 @@ by default we get str value
 # f.close()
 
 
+import csv
+def create_csv():
+    with open('details.csv','w') as obj:
+        fobj = csv.writer(obj)
+        fobj.writerow(['Roll','Name','Total_marks'])
+        while True:
+            roll = int(input("Enter Roll Number:  "))
+            name = input("Enter Name:  ")
+            marks = input("Enter Marks:  ")
+            record = [roll, name , marks]
+            fobj.writerow(record)
+            ch = int(input("1--> Enter More \n2--> Exit\nEnter your Choice:"))
 
+            if ch==2:
+                break
 
+def display():
+    with open('details.csv','r') as obj:
+        fobj = csv.reader(obj)
+        for i in fobj:
+            print(i)
 
 
 

@@ -194,42 +194,99 @@ by default we get str value
 # f.close()
 
 
-import csv
-def create_csv():
-    with open('details.csv','w') as obj:
-        fobj = csv.writer(obj)
-        fobj.writerow(['Roll','Name','Total_marks'])
-        while True:
-            roll = int(input("Enter Roll Number:  "))
-            name = input("Enter Name:  ")
-            marks = input("Enter Marks:  ")
-            record = [roll, name , marks]
-            fobj.writerow(record)
-            ch = int(input("1--> Enter More \n2--> Exit\nEnter your Choice:"))
+# from array import array
+# import csv
+# def create_csv():
+#     with open('details.csv','w') as obj:
+#         fobj = csv.writer(obj)
+#         fobj.writerow(['Roll','Name','Total_marks'])
+#         while True:
+#             roll = int(input("Enter Roll Number:  "))
+#             name = input("Enter Name:  ")
+#             marks = input("Enter Marks:  ")
+#             record = [roll, name , marks]
+#             fobj.writerow(record)
+#             ch = int(input("1--> Enter More \n2--> Exit\nEnter your Choice:"))
 
-            if ch==2:
-                break
+#             if ch==2:
+#                 break
 
-def display():
-    with open('details.csv','r') as obj:
-        fobj = csv.reader(obj)
-        for i in fobj:
-            print(i)
-        # print(fobj) wrong
-
-
-
+# def display():
+#     with open('details.csv','r') as obj:
+#         fobj = csv.reader(obj)
+#         for i in fobj:
+#             print(i)
+#         # print(fobj) wrong
 
 
 
+"""Data Structures and Algorithms"""
+
+# def linear_search(list,size,key):
+#     flag =0
+#     for i in range(size):
+#         if list[i]==key:
+#             flag=1
+#             position=i+1
+#             break
+    
+#     if flag==1:
+#         print("Object found at",position,"th position")
+#     else:
+#         print("Object not found in the given list of numbers")
+
+# array=[]
+# size = int(input("how many numbers"))
+# for i in range(size):
+#     element= int(input("Value to be added"))
+#     array.append(element)
+# key = int(input("what is the number to find?"))
+
+
+# linear_search(array,size,key)
 
 
 
 
+'''Binary Search'''
 
 
+# def binary_search(list,size,key):
+#     i=0
+#     j=size-1
+#     flag=0
+#     while i<=j and flag==0:
+#         mid = (i+j)//2
+#         if list[mid]==key:
+#             flag =1
+#             position= mid+1
+#         if list[mid]>key:
+#             j=mid-1
+#         if list[mid]<key:
+#             i=mid+1
+#     if flag==1:
+#         print('number found at',position)
+#     if flag==0:
+#         print('number not found')
+
+# a = []
+# size_list = int(input("Number of Elements to sort"))
+# for i in range(size_list):
+#     value = int(input("Element:-"))
+#     a.append(value)
+
+# key1 = int(input("What to search"))
 
 
+# '''assuming ascending order '''
+
+# binary_search(a,size_list,key1)
+
+# vals = [31,15,42,12,5,39,21,61,25]
+
+# # a=[i for i in vals if i%3==0 ]
+# a=[i if i%3==0 else None for i in vals]
+# print(a)
 
 
 

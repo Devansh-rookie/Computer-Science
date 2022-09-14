@@ -215,6 +215,7 @@ def display():
         fobj = csv.reader(obj)
         for i in fobj:
             print(i)
+        # print(fobj) wrong
 
 
 

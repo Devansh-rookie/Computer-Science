@@ -287,11 +287,23 @@ The total number of lines starting with vowels are :  3
 12: Write a program to enter a string and to check if it is in
 palindrome or not using loop.
 '''
-
+# def isPalindrome(s):
+#     return s == s[::-1]
+ 
+ 
+# # Driver code
+# s = input('Enter the string to be checked: ')
+# ans = isPalindrome(s)
+ 
+# if ans:
+#     print("Yes, it is a Palindrome")
+# else:
+#     print("No, it is not a Palindrome")
 
 '''
 Output:
-
+Enter the string to be checked: AvA
+Yes, it is a Palindrome
 '''
 
 
@@ -302,11 +314,24 @@ count and print the following from the file.
 a) The number of lines present in the file.
 b) The number of words present in the file
 '''
+# f = open(r'F:\Computer Science\Project\sample3.txt','r+')
+# count=0
+# wcount=0
+# for line in f:
+#     if line!='\n':
+#         count+=1
+#         word = line.split()
+#         for i in word:
+#             wcount+=1
+# print('Total Lines', count)
+# print('Total Words', wcount)
+
 
 
 '''
 Output:
-
+Total Lines 16
+Total Words 546
 '''
 
 
@@ -317,12 +342,59 @@ given roll no and display the name ,if not found display the
 appropriate error message.
 '''
 
+# import pickle
+
+# #creating the file and writing the data
+
+# f=open("records.dat", "wb")
+
+# pickle.dump(["Wakil", 1], f)
+
+# pickle.dump(["Tanish", 2], f)
+
+# pickle.dump(["Priyashi", 3], f)
+
+# pickle.dump(["Kanupriya", 4], f)
+
+# pickle.dump(["Aaheli", 5], f)
+
+# f.close()
+
+# #opeining the file to read contents
+
+# f=open("records.dat", "rb")
+
+# n=int(input("Enter the Roll Number: "))
+
+# flag = False
+
+# while True:
+
+#    try:
+
+#        x=pickle.load(f)
+
+#        if x[1]==n:
+
+#            print("Name: ", x[0])
+
+#            flag = True
+
+#    except EOFError:
+
+#        break
+
+# if flag==False:
+
+#    print("This Roll Number does not exist")
+
 
 
 
 '''
 Output:
-
+Enter the Roll Number: 3
+Name:  Priyashi
 '''
 
 
@@ -330,10 +402,12 @@ Output:
 15 :Write a random number generator that generates random
 numbers between 1 and 100.
 '''
+# import random
+# print("The Random number between 1 and 100 is", random.randint(1,100))
 
 '''
 Output:
-
+The Random number between 1 and 100 is 67
 '''
 
 '''
@@ -341,9 +415,30 @@ Output:
 the employee having empno is 2521 in a binary file emp.dat.
 '''
 
+import pickle
+emp ={}
+found = False
+fin = open('emp.dat','rb+')
+try:
+    while True:
+        rpos=fin.tell()
+        emp=pickle.load(fin)
+        if emp['emp_no']==2521:
+            fin.seek(rpos)
+            pickle.dump(emp,fin)
+            found = True
+except EOFError:
+    if found==False:
+        print('Sorry, no matching record found')
+    else:
+        print('Record(s) successfully updated')
+
+    fin.close()
+
+
 '''
 Output:
-
+Sorry, no matching record found
 '''
 
 

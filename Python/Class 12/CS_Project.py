@@ -105,24 +105,24 @@ What is the number to be checked(for Armstrong No.)?: 1634
 5: Write a program to input day number of a
 week and display the corresponding day name .
 '''
-no_of_day = int(input('What is the number of the weekday(Valid Values= 1 to 7)?: '))
+# no_of_day = int(input('What is the number of the weekday(Valid Values= 1 to 7)?: '))
 
-if no_of_day==1:
-    print('The day is Monday')
-elif no_of_day==2:
-    print('The day is Tuesday')
-elif no_of_day==3:
-    print('The day is Wednesday')
-elif no_of_day==4:
-    print('The day is Thursday')
-elif no_of_day==5:
-    print('The day is Friday')
-elif no_of_day==6:
-    print('The day is Saturday')
-elif no_of_day==7:
-    print('The day is Sunday')
-else:
-    print('Please put in a valid value form 1 to 7')
+# if no_of_day==1:
+#     print('The day is Monday')
+# elif no_of_day==2:
+#     print('The day is Tuesday')
+# elif no_of_day==3:
+#     print('The day is Wednesday')
+# elif no_of_day==4:
+#     print('The day is Thursday')
+# elif no_of_day==5:
+#     print('The day is Friday')
+# elif no_of_day==6:
+#     print('The day is Saturday')
+# elif no_of_day==7:
+#     print('The day is Sunday')
+# else:
+#     print('Please put in a valid value form 1 to 7')
 
 '''
 Output:
@@ -130,6 +130,265 @@ What is the number of the weekday(Valid Values= 1 to 7)?: 3
 The day is Wednesday
 '''
 
+'''
+6: Write a menu driven program to calculate the
+total surface area and volume of a cube,cuboid
+or cylinder depending upon user's choice.
+'''
+
+'''
+Output:
+'''
+
+'''
+7: Write a program to read a string and print out the
+following:
+1)No. of capital alphabets.
+2)No. of small alphabets.
+'''
+
+# def alphabet_count(x):
+#     capicount=0
+#     smallcount=0
+#     for i in x:
+#         if i.isupper():
+#             capicount+=1
+#         elif i.islower():
+#             smallcount+=1
+#     print('The number of Capital Letters in the string is',capicount)
+#     print('The number of Small Letters in the string is',smallcount)
+# string = input("Put in the string: ")
+# alphabet_count(string)
+
+
+'''
+Output:
+Put in the string: Happy New Year
+The number of Capital Letters in the string is 3
+The number of Small Letters in the string is 9
+'''
+
+'''
+8: Write a program to read a string and print it after replacing
+each of it's capital alphabets by the corresponding small
+alphabets and each small alphabet by it's corresponding capital
+alphabet.
+'''
+
+# def change_case(string):
+#     print(string.swapcase())
+# string = 'Happy New Year'
+# change_case(string)
+
+'''
+Output:
+hAPPY nEW yEAR
+'''
+
+
+'''
+9: Write a python program to read a file named"
+article.txt",the following from the file ?
+(i) length of the file (total characters in the file)
+(ii) total alphabets
+(iii) total digits
+(iv)total spaces
+(v)total special characters
+'''
+# file_obj = open(r'F:\Computer Science\Project\sample3.txt','r+')
+# text = file_obj.read()
+# length=len(text)
+# alpha=0
+# digits=0
+# space=0
+# special=0
+# for i in text:
+#     if i.isalpha():
+#         alpha+=1
+#     elif i.isdigit():
+#         digits+=1
+#     elif i.isspace():
+#         space+=1
+#     else:
+#         special+=1
+# file_obj.close()
+# print('Length of the file is', length)
+# print('Number of alphabets in the file',alpha)
+# print('Number of Digits in the file',digits)
+# print('Number of spaces in the file',space)
+# print('Number of Special Characters in the file',special)
+
+
+'''
+Output:
+Length of the file is 3541
+Number of alphabets in the file 2857
+Number of Digits in the file 0
+Number of spaces in the file 550
+Number of Special Characters in the file 134
+'''
+
+'''
+10: Write a python program to read a file named "sample1.txt",
+count and print the total words starting with "a" or "A".
+'''
+
+# def count_words_withaorA():
+#     w=0
+#     fobj = open(r'F:\Computer Science\Project\sample1.txt','r+')
+#     for line in fobj:
+#         for word in line.split():
+#             if (word[0]=='a' or word[0]=='A'):
+#                 print(word)
+#                 w=w+1
+#     print('Total words starting with "a" or "A" are',w)
+
+# count_words_withaorA()
+
+'''
+Output:
+amicitia
+amet,
+adipiscing
+An
+a
+At
+absurdum,
+Total words starting with "a" or "A" are 7
+'''
+
+'''
+11: Write a python program to read a file named "story.txt",
+count and print the total lines starting with vowels in the file.
+'''
+
+# vowels ='AEIOUaeiou'
+# with open(r'F:\Computer Science\Project\story.txt') as f:
+#     line = f.readline()#break lines and readlines does it in lists
+#     count=0
+#     while line:
+#         if (line[0] in vowels):
+#             print(line)
+#             count+=1
+#         line=f.readline()
+#     print("\nThe total number of lines starting with vowels are : ",count)
+
+
+'''
+Output:
+A short story is a piece of prose fiction that can typically be read 
+in
+a
+The total number of lines starting with vowels are :  3
+'''
+
+
+'''
+12: Write a program to enter a string and to check if it is in
+palindrome or not using loop.
+'''
+
+
+'''
+Output:
+
+'''
 
 
 
+'''
+13: Write a python program to read a file named "sample.txt",
+count and print the following from the file.
+a) The number of lines present in the file.
+b) The number of words present in the file
+'''
+
+
+'''
+Output:
+
+'''
+
+
+
+'''
+14: Create a binary file with name and roll no. Search for a
+given roll no and display the name ,if not found display the
+appropriate error message.
+'''
+
+
+
+
+'''
+Output:
+
+'''
+
+
+'''
+15 :Write a random number generator that generates random
+numbers between 1 and 100.
+'''
+
+'''
+Output:
+
+'''
+
+'''
+16:Write a python program to increase the salary by Rs.2000/of
+the employee having empno is 2521 in a binary file emp.dat.
+'''
+
+'''
+Output:
+
+'''
+
+
+
+'''
+17:Write a program in python to read a text file and remove
+all the lines that contain character 'a' in a file and write it to
+another file.
+'''
+
+'''
+Output:
+
+'''
+
+
+'''
+18: Write a program in python that swipe the first half of
+sorted list with second half of list.
+'''
+
+'''
+Output:
+
+'''
+
+'''
+19: Write a program in python to get item details (icode,
+description and price) for multiple items from the user and
+create a csv file by writing all items in one go .
+'''
+
+'''
+Output:
+
+'''
+
+
+'''
+20:Write a program in python to find out the largest number
+and sum of all numbers without using built in methods like
+max() & sum().
+'''
+
+'''
+Output:
+
+'''

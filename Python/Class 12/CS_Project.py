@@ -415,25 +415,25 @@ The Random number between 1 and 100 is 67
 the employee having empno is 2521 in a binary file emp.dat.
 '''
 
-import pickle
-emp ={}
-found = False
-fin = open('emp.dat','rb+')
-try:
-    while True:
-        rpos=fin.tell()
-        emp=pickle.load(fin)
-        if emp['emp_no']==2521:
-            fin.seek(rpos)
-            pickle.dump(emp,fin)
-            found = True
-except EOFError:
-    if found==False:
-        print('Sorry, no matching record found')
-    else:
-        print('Record(s) successfully updated')
+# import pickle
+# emp ={}
+# found = False
+# fin = open('emp.dat','rb+')
+# try:
+#     while True:
+#         rpos=fin.tell()
+#         emp=pickle.load(fin)
+#         if emp['emp_no']==2521:
+#             fin.seek(rpos)
+#             pickle.dump(emp,fin)
+#             found = True
+# except EOFError:
+#     if found==False:
+#         print('Sorry, no matching record found')
+#     else:
+#         print('Record(s) successfully updated')
 
-    fin.close()
+#     fin.close()
 
 
 '''
@@ -448,6 +448,18 @@ Sorry, no matching record found
 all the lines that contain character 'a' in a file and write it to
 another file.
 '''
+
+fo= open('hp.txt','r')
+fi = open('writehp.txt','w')
+l=fo.readlines()
+for i in l:
+    if 'a' in i:
+        i=i.replace('a','')
+        fi.write(i)
+fo.close()
+fi.close()
+
+
 
 '''
 Output:

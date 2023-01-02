@@ -135,6 +135,93 @@ The day is Wednesday
 total surface area and volume of a cube,cuboid
 or cylinder depending upon user's choice.
 '''
+pi=3.14159
+def area_cube():
+    a= float(input('what is the side of the cube?: '))
+    area = 6*a*a
+    print("The area of cube is",area)
+
+def area_cylinder():
+    r= float(input('what is the radius of the cylinder?: '))
+    l= float(input('what is the length of the cylinder?: '))
+    
+    area = 2*pi*r*r + 2*pi*r*l
+    print("The area of cube is",area)
+
+def area_cuboid():
+    l= float(input('what is the length of the cuboid?: '))
+    b= float(input('what is the breadth of the cuboid?: '))
+    h= float(input('what is the height of the cuboid?: '))
+    area = 2*(l*b + b*h + l*h)
+    print("The area of cuboid is",area)
+
+def vol_cube():
+    a= float(input('what is the side of the cube?: '))
+    vol = a*a*a
+    print("The area of cube is",vol)
+
+def vol_cylinder():
+    r= float(input('what is the radius of the cylinder?: '))
+    l= float(input('what is the length of the cylinder?: '))
+    
+    vol = pi*r*r*l
+    print("The area of cube is",vol)
+
+def vol_cuboid():
+    l= float(input('what is the length of the cuboid?: '))
+    b= float(input('what is the breadth of the cuboid?: '))
+    h= float(input('what is the height of the cuboid?: '))
+    vol = l*b*h
+    print("The area of cuboid is",vol)
+
+
+while True:
+    print("Welcome to the Program \n")
+    print("What would you like to calculate\n"
+    "1. Total Surface Area\n"
+    "2. Volume\n"
+    "3. Exit"
+    )
+    
+    ch= int(input())
+    if ch==1:
+        print("Whose Total Surface Area would you like to calculate?\n"
+"1. Cube\n"
+"2. Cuboid\n"
+"3. Cylinder\n"
+"4. Exit")        
+        i=int(input())
+        if i==1:
+            area_cube()
+        elif i==2:
+            area_cuboid()
+        elif i==3:
+            area_cylinder()
+        elif i==4:
+            break
+        else:
+            print("Please enter a number between 1 and 4")
+    elif ch==2:
+        print("Whose Volume would you like to calculate?\n"
+"1. Cube\n"
+"2. Cuboid\n"
+"3. Cylinder\n"
+"4. Exit")        
+        i=int(input())
+        if i==1:
+            vol_cube()
+        elif i==2:
+            vol_cuboid()
+        elif i==3:
+            vol_cylinder()
+        elif i==4:
+            break
+        else:
+            print("Please enter a number between 1 and 4")
+    elif ch==3:
+        break
+    else:
+        print("Please enter a number between 1 and 4")
 
 '''
 Output:
@@ -449,20 +536,43 @@ all the lines that contain character 'a' in a file and write it to
 another file.
 '''
 
-fo= open('hp.txt','r')
-fi = open('writehp.txt','w')
-l=fo.readlines()
-for i in l:
-    if 'a' in i:
-        i=i.replace('a','')
-        fi.write(i)
-fo.close()
-fi.close()
+# fo= open(r'F:\Computer Science\Project\story.txt','r')
+# fi = open('writehp.txt','w')
+# l=fo.readlines()
+# for i in l:
+#     if 'a' in i:
+#         i=i.replace('a','')
+#         fi.write(i)
+# fo.close()
+# fi.close()
 
 
 
 '''
 Output:
+Before Program:
+A short story is a piece of prose fiction that can typically be read 
+in 
+a
+ single sitting and focuses on a self-contained incident or series of linked incidents, with 
+ the intent of evoking a single effect or mood. The 
+short story is one of the oldest types of literature and has existed in 
+
+the form of legends, mythic tales, folk tales, fairy tales, t
+all tales, fables, and anecdotes in various ancient communities around the world. The mod
+ern short story developed in the early 19th century
+
+
+
+After Program:
+A short story is  piece of prose fiction tht cn typiclly be red 
+
+ single sitting nd focuses on  self-contined incident or s
+ eries of linked incidents, with the intent of evoking  single effect or mood. The 
+short story is one of the oldest types of literture nd hs existed in 
+the form of legends, mythic tles, folk tles, firy tles, tll 
+tles, fbles, nd necdotes in vrious ncient communities round the world. The modern short st
+ory developed in the erly 19th century
 
 '''
 
@@ -471,21 +581,52 @@ Output:
 18: Write a program in python that swipe the first half of
 sorted list with second half of list.
 '''
+# def swap(list):
+#     l=len(list)
+#     for i in range(l//2):
+#         list[i],list[l//2+i]=list[l//2+i],list[i]
+#     print(list)
+
+# list = eval(input("Enter the list: "))
+# swap(list)
+
 
 '''
 Output:
-
+Enter the list: [1,3,6,7,34,7]
+[7, 34, 7, 1, 3, 6]
 '''
 
 '''
 19: Write a program in python to get item details (icode,
 description and price) for multiple items from the user and
-create a csv file by writing all items in one go .
+create a csv file by writing all items in one go.
 '''
+# import csv
+# fh = open("Items.csv", "w")
+# iwriter = csv.writer (fh)
+# ans = 'y'
+# itemrec = [['Item_Name', 'Description"', 'Price']]
+# print("Enter item details ")
+# while ans == 'y' :
+#     iname = input("Enter Item code : ")
+#     desc = input("Enter description : ")
+#     price = float(input("Enter price: "))
+#     itemrec.append([iname, desc, price])
+#     ans = input ("Want to enter more items? (y/n)... ")
+# else:
+#     iwriter.writerows(itemrec)
+#     print("Records written successfully.")
+# fh.close()
 
 '''
 Output:
-
+Enter item details 
+Enter Item code : 1
+Enter description : A headphone
+Enter price: 5000 
+Want to enter more items? (y/n)... n
+Records written successfully.
 '''
 
 
@@ -494,8 +635,26 @@ Output:
 and sum of all numbers without using built in methods like
 max() & sum().
 '''
+# def myMax(list1):
+#     max=list1[0]
+#     for x in list1:
+#         if x>max:
+#             max=x
+#     return max
+# def listsum(list1):
+#     total =0
+#     for ele in range(0, len(list1)):
+#         total =total + list1[ele]
+#     print(total)   
+# lst=eval(input("Enter the List: "))
+# print("Sum of all elements in given list: ")
+# listsum(lst)
+# print("Largest element is: ", myMax(lst))
 
 '''
 Output:
-
+Enter the List: [1,2]
+Sum of all elements in given list: 
+3
+Largest element is:  2
 '''

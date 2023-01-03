@@ -8,11 +8,11 @@ Python Project Class 12
 and print the largest number.
 '''
 
-# a= int (input ('Enter the first number: '))
-# b=int (input ('Enter the second number: '))
-# c=int (input ('Enter the third number: '))
-# list = [a, b, c]
-# print('The largest number is:', max (list))
+a= int (input ('Enter the first number: '))
+b=int (input ('Enter the second number: '))
+c=int (input ('Enter the third number: '))
+list = [a, b, c]
+print('The largest number is:', max (list))
 
 '''
 Output:
@@ -29,13 +29,13 @@ person and check and print whether the person can vote or
 not.
 '''
 
-# Name = input('What is the Name of the Person?: ')
-# Age = int(input('What is the Age of the Person?: '))
+Name = input('What is the Name of the Person?: ')
+Age = int(input('What is the Age of the Person?: '))
 
-# if Age>=18:
-#     print(Name, 'is Eligible to vote.')
-# else:
-#     print(Name, 'is too young to vote.')
+if Age>=18:
+    print(Name, 'is Eligible to vote.')
+else:
+    print(Name, 'is too young to vote.')
 
 
 '''
@@ -50,13 +50,13 @@ Devansh is too young to vote.
 and n and display first m multiples of n.
 '''
 
-# n= int(input('What is the number?: '))
-# m= int(input('How many multiples are needed?: '))
-# j=0
-# for i in range(1, m+1):
-#     j+=1
-#     mul = j*n
-#     print(mul, 'is a multiple of', n)
+n= int(input('What is the number?: '))
+m= int(input('How many multiples are needed?: '))
+j=0
+for i in range(1, m+1):
+    j+=1
+    mul = j*n
+    print(mul, 'is a multiple of', n)
 
 '''
 Output:
@@ -74,26 +74,26 @@ How many multiples are needed?: 5
 4: Write a program to check if the entered
 number is Armstrong or not.
 '''
-# num = int(input('What is the number to be checked(for Armstrong No.)?: '))
-# # Changed num variable to string, 
-# # and calculated the length (number of digits)
-# order = len(str(num))
+num = int(input('What is the number to be checked(for Armstrong No.)?: '))
+# Changed num variable to string, 
+# and calculated the length (number of digits)
+order = len(str(num))
 
-# # initialize sum
-# sum = 0
+# initialize sum
+sum = 0
 
-# # find the sum of the cube of each digit
-# temp = num
-# while temp > 0:
-#    digit = temp % 10
-#    sum += digit ** order
-#    temp //= 10
+# find the sum of the cube of each digit
+temp = num
+while temp > 0:
+   digit = temp % 10
+   sum += digit ** order
+   temp //= 10
 
-# # display the result
-# if num == sum:
-#    print(num,"is an Armstrong number")
-# else:
-#    print(num,"is not an Armstrong number")
+# display the result
+if num == sum:
+   print(num,"is an Armstrong number")
+else:
+   print(num,"is not an Armstrong number")
 
 '''
 Output:
@@ -105,24 +105,24 @@ What is the number to be checked(for Armstrong No.)?: 1634
 5: Write a program to input day number of a
 week and display the corresponding day name .
 '''
-# no_of_day = int(input('What is the number of the weekday(Valid Values= 1 to 7)?: '))
+no_of_day = int(input('What is the number of the weekday(Valid Values= 1 to 7)?: '))
 
-# if no_of_day==1:
-#     print('The day is Monday')
-# elif no_of_day==2:
-#     print('The day is Tuesday')
-# elif no_of_day==3:
-#     print('The day is Wednesday')
-# elif no_of_day==4:
-#     print('The day is Thursday')
-# elif no_of_day==5:
-#     print('The day is Friday')
-# elif no_of_day==6:
-#     print('The day is Saturday')
-# elif no_of_day==7:
-#     print('The day is Sunday')
-# else:
-#     print('Please put in a valid value form 1 to 7')
+if no_of_day==1:
+    print('The day is Monday')
+elif no_of_day==2:
+    print('The day is Tuesday')
+elif no_of_day==3:
+    print('The day is Wednesday')
+elif no_of_day==4:
+    print('The day is Thursday')
+elif no_of_day==5:
+    print('The day is Friday')
+elif no_of_day==6:
+    print('The day is Saturday')
+elif no_of_day==7:
+    print('The day is Sunday')
+else:
+    print('Please put in a valid value form 1 to 7')
 
 '''
 Output:
@@ -225,6 +225,21 @@ while True:
 
 '''
 Output:
+Welcome to the Program 
+
+What would you like to calculate
+1. Total Surface Area
+2. Volume
+3. Exit
+1
+Whose Total Surface Area would you like to calculate?
+1. Cube
+2. Cuboid
+3. Cylinder
+4. Exit
+1
+what is the side of the cube?: 1
+The area of cube is 6.0
 '''
 
 '''
@@ -234,18 +249,18 @@ following:
 2)No. of small alphabets.
 '''
 
-# def alphabet_count(x):
-#     capicount=0
-#     smallcount=0
-#     for i in x:
-#         if i.isupper():
-#             capicount+=1
-#         elif i.islower():
-#             smallcount+=1
-#     print('The number of Capital Letters in the string is',capicount)
-#     print('The number of Small Letters in the string is',smallcount)
-# string = input("Put in the string: ")
-# alphabet_count(string)
+def alphabet_count(x):
+    capicount=0
+    smallcount=0
+    for i in x:
+        if i.isupper():
+            capicount+=1
+        elif i.islower():
+            smallcount+=1
+    print('The number of Capital Letters in the string is',capicount)
+    print('The number of Small Letters in the string is',smallcount)
+string = input("Put in the string: ")
+alphabet_count(string)
 
 
 '''
@@ -262,10 +277,10 @@ alphabets and each small alphabet by it's corresponding capital
 alphabet.
 '''
 
-# def change_case(string):
-#     print(string.swapcase())
-# string = 'Happy New Year'
-# change_case(string)
+def change_case(string):
+    print(string.swapcase())
+string = 'Happy New Year'
+change_case(string)
 
 '''
 Output:
@@ -282,28 +297,28 @@ article.txt",the following from the file ?
 (iv)total spaces
 (v)total special characters
 '''
-# file_obj = open(r'F:\Computer Science\Project\sample3.txt','r+')
-# text = file_obj.read()
-# length=len(text)
-# alpha=0
-# digits=0
-# space=0
-# special=0
-# for i in text:
-#     if i.isalpha():
-#         alpha+=1
-#     elif i.isdigit():
-#         digits+=1
-#     elif i.isspace():
-#         space+=1
-#     else:
-#         special+=1
-# file_obj.close()
-# print('Length of the file is', length)
-# print('Number of alphabets in the file',alpha)
-# print('Number of Digits in the file',digits)
-# print('Number of spaces in the file',space)
-# print('Number of Special Characters in the file',special)
+file_obj = open(r'F:\Computer Science\Project\sample3.txt','r+')
+text = file_obj.read()
+length=len(text)
+alpha=0
+digits=0
+space=0
+special=0
+for i in text:
+    if i.isalpha():
+        alpha+=1
+    elif i.isdigit():
+        digits+=1
+    elif i.isspace():
+        space+=1
+    else:
+        special+=1
+file_obj.close()
+print('Length of the file is', length)
+print('Number of alphabets in the file',alpha)
+print('Number of Digits in the file',digits)
+print('Number of spaces in the file',space)
+print('Number of Special Characters in the file',special)
 
 
 '''
@@ -320,17 +335,17 @@ Number of Special Characters in the file 134
 count and print the total words starting with "a" or "A".
 '''
 
-# def count_words_withaorA():
-#     w=0
-#     fobj = open(r'F:\Computer Science\Project\sample1.txt','r+')
-#     for line in fobj:
-#         for word in line.split():
-#             if (word[0]=='a' or word[0]=='A'):
-#                 print(word)
-#                 w=w+1
-#     print('Total words starting with "a" or "A" are',w)
+def count_words_withaorA():
+    w=0
+    fobj = open(r'F:\Computer Science\Project\sample1.txt','r+')
+    for line in fobj:
+        for word in line.split():
+            if (word[0]=='a' or word[0]=='A'):
+                print(word)
+                w=w+1
+    print('Total words starting with "a" or "A" are',w)
 
-# count_words_withaorA()
+count_words_withaorA()
 
 '''
 Output:
@@ -349,16 +364,16 @@ Total words starting with "a" or "A" are 7
 count and print the total lines starting with vowels in the file.
 '''
 
-# vowels ='AEIOUaeiou'
-# with open(r'F:\Computer Science\Project\story.txt') as f:
-#     line = f.readline()#break lines and readlines does it in lists
-#     count=0
-#     while line:
-#         if (line[0] in vowels):
-#             print(line)
-#             count+=1
-#         line=f.readline()
-#     print("\nThe total number of lines starting with vowels are : ",count)
+vowels ='AEIOUaeiou'
+with open(r'F:\Computer Science\Project\story.txt') as f:
+    line = f.readline()#break lines and readlines does it in lists
+    count=0
+    while line:
+        if (line[0] in vowels):
+            print(line)
+            count+=1
+        line=f.readline()
+    print("\nThe total number of lines starting with vowels are : ",count)
 
 
 '''
@@ -374,18 +389,18 @@ The total number of lines starting with vowels are :  3
 12: Write a program to enter a string and to check if it is in
 palindrome or not using loop.
 '''
-# def isPalindrome(s):
-#     return s == s[::-1]
+def isPalindrome(s):
+    return s == s[::-1]
  
  
-# # Driver code
-# s = input('Enter the string to be checked: ')
-# ans = isPalindrome(s)
+# Driver code
+s = input('Enter the string to be checked: ')
+ans = isPalindrome(s)
  
-# if ans:
-#     print("Yes, it is a Palindrome")
-# else:
-#     print("No, it is not a Palindrome")
+if ans:
+    print("Yes, it is a Palindrome")
+else:
+    print("No, it is not a Palindrome")
 
 '''
 Output:
@@ -401,17 +416,17 @@ count and print the following from the file.
 a) The number of lines present in the file.
 b) The number of words present in the file
 '''
-# f = open(r'F:\Computer Science\Project\sample3.txt','r+')
-# count=0
-# wcount=0
-# for line in f:
-#     if line!='\n':
-#         count+=1
-#         word = line.split()
-#         for i in word:
-#             wcount+=1
-# print('Total Lines', count)
-# print('Total Words', wcount)
+f = open(r'F:\Computer Science\Project\sample3.txt','r+')
+count=0
+wcount=0
+for line in f:
+    if line!='\n':
+        count+=1
+        word = line.split()
+        for i in word:
+            wcount+=1
+print('Total Lines', count)
+print('Total Words', wcount)
 
 
 
@@ -429,51 +444,51 @@ given roll no and display the name ,if not found display the
 appropriate error message.
 '''
 
-# import pickle
+import pickle
 
-# #creating the file and writing the data
+#creating the file and writing the data
 
-# f=open("records.dat", "wb")
+f=open("records.dat", "wb")
 
-# pickle.dump(["Wakil", 1], f)
+pickle.dump(["Wakil", 1], f)
 
-# pickle.dump(["Tanish", 2], f)
+pickle.dump(["Tanish", 2], f)
 
-# pickle.dump(["Priyashi", 3], f)
+pickle.dump(["Priyashi", 3], f)
 
-# pickle.dump(["Kanupriya", 4], f)
+pickle.dump(["Kanupriya", 4], f)
 
-# pickle.dump(["Aaheli", 5], f)
+pickle.dump(["Aaheli", 5], f)
 
-# f.close()
+f.close()
 
-# #opeining the file to read contents
+#opeining the file to read contents
 
-# f=open("records.dat", "rb")
+f=open("records.dat", "rb")
 
-# n=int(input("Enter the Roll Number: "))
+n=int(input("Enter the Roll Number: "))
 
-# flag = False
+flag = False
 
-# while True:
+while True:
 
-#    try:
+   try:
 
-#        x=pickle.load(f)
+       x=pickle.load(f)
 
-#        if x[1]==n:
+       if x[1]==n:
 
-#            print("Name: ", x[0])
+           print("Name: ", x[0])
 
-#            flag = True
+           flag = True
 
-#    except EOFError:
+   except EOFError:
 
-#        break
+       break
 
-# if flag==False:
+if flag==False:
 
-#    print("This Roll Number does not exist")
+   print("This Roll Number does not exist")
 
 
 
@@ -489,8 +504,8 @@ Name:  Priyashi
 15 :Write a random number generator that generates random
 numbers between 1 and 100.
 '''
-# import random
-# print("The Random number between 1 and 100 is", random.randint(1,100))
+import random
+print("The Random number between 1 and 100 is", random.randint(1,100))
 
 '''
 Output:
@@ -502,25 +517,25 @@ The Random number between 1 and 100 is 67
 the employee having empno is 2521 in a binary file emp.dat.
 '''
 
-# import pickle
-# emp ={}
-# found = False
-# fin = open('emp.dat','rb+')
-# try:
-#     while True:
-#         rpos=fin.tell()
-#         emp=pickle.load(fin)
-#         if emp['emp_no']==2521:
-#             fin.seek(rpos)
-#             pickle.dump(emp,fin)
-#             found = True
-# except EOFError:
-#     if found==False:
-#         print('Sorry, no matching record found')
-#     else:
-#         print('Record(s) successfully updated')
+import pickle
+emp ={}
+found = False
+fin = open('emp.dat','rb+')
+try:
+    while True:
+        rpos=fin.tell()
+        emp=pickle.load(fin)
+        if emp['emp_no']==2521:
+            fin.seek(rpos)
+            pickle.dump(emp,fin)
+            found = True
+except EOFError:
+    if found==False:
+        print('Sorry, no matching record found')
+    else:
+        print('Record(s) successfully updated')
 
-#     fin.close()
+    fin.close()
 
 
 '''
@@ -536,15 +551,15 @@ all the lines that contain character 'a' in a file and write it to
 another file.
 '''
 
-# fo= open(r'F:\Computer Science\Project\story.txt','r')
-# fi = open('writehp.txt','w')
-# l=fo.readlines()
-# for i in l:
-#     if 'a' in i:
-#         i=i.replace('a','')
-#         fi.write(i)
-# fo.close()
-# fi.close()
+fo= open(r'F:\Computer Science\Project\story.txt','r')
+fi = open('writehp.txt','w')
+l=fo.readlines()
+for i in l:
+    if 'a' in i:
+        i=i.replace('a','')
+        fi.write(i)
+fo.close()
+fi.close()
 
 
 
@@ -581,14 +596,14 @@ ory developed in the erly 19th century
 18: Write a program in python that swipe the first half of
 sorted list with second half of list.
 '''
-# def swap(list):
-#     l=len(list)
-#     for i in range(l//2):
-#         list[i],list[l//2+i]=list[l//2+i],list[i]
-#     print(list)
+def swap(list):
+    l=len(list)
+    for i in range(l//2):
+        list[i],list[l//2+i]=list[l//2+i],list[i]
+    print(list)
 
-# list = eval(input("Enter the list: "))
-# swap(list)
+list = eval(input("Enter the list: "))
+swap(list)
 
 
 '''
@@ -602,22 +617,22 @@ Enter the list: [1,3,6,7,34,7]
 description and price) for multiple items from the user and
 create a csv file by writing all items in one go.
 '''
-# import csv
-# fh = open("Items.csv", "w")
-# iwriter = csv.writer (fh)
-# ans = 'y'
-# itemrec = [['Item_Name', 'Description"', 'Price']]
-# print("Enter item details ")
-# while ans == 'y' :
-#     iname = input("Enter Item code : ")
-#     desc = input("Enter description : ")
-#     price = float(input("Enter price: "))
-#     itemrec.append([iname, desc, price])
-#     ans = input ("Want to enter more items? (y/n)... ")
-# else:
-#     iwriter.writerows(itemrec)
-#     print("Records written successfully.")
-# fh.close()
+import csv
+fh = open("Items.csv", "w")
+iwriter = csv.writer (fh)
+ans = 'y'
+itemrec = [['Item_Name', 'Description"', 'Price']]
+print("Enter item details ")
+while ans == 'y' :
+    iname = input("Enter Item code : ")
+    desc = input("Enter description : ")
+    price = float(input("Enter price: "))
+    itemrec.append([iname, desc, price])
+    ans = input ("Want to enter more items? (y/n)... ")
+else:
+    iwriter.writerows(itemrec)
+    print("Records written successfully.")
+fh.close()
 
 '''
 Output:
@@ -635,21 +650,21 @@ Records written successfully.
 and sum of all numbers without using built in methods like
 max() & sum().
 '''
-# def myMax(list1):
-#     max=list1[0]
-#     for x in list1:
-#         if x>max:
-#             max=x
-#     return max
-# def listsum(list1):
-#     total =0
-#     for ele in range(0, len(list1)):
-#         total =total + list1[ele]
-#     print(total)   
-# lst=eval(input("Enter the List: "))
-# print("Sum of all elements in given list: ")
-# listsum(lst)
-# print("Largest element is: ", myMax(lst))
+def myMax(list1):
+    max=list1[0]
+    for x in list1:
+        if x>max:
+            max=x
+    return max
+def listsum(list1):
+    total =0
+    for ele in range(0, len(list1)):
+        total =total + list1[ele]
+    print(total)   
+lst=eval(input("Enter the List: "))
+print("Sum of all elements in given list: ")
+listsum(lst)
+print("Largest element is: ", myMax(lst))
 
 '''
 Output:
